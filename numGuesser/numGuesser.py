@@ -22,7 +22,7 @@ def adivinharNumero():
     def atualizar_barra(loading_label=loading):
         valor_atual = progresso['value']
         if valor_atual < 100:
-            progresso["value"] += 20  # Aumenta o valor em 10 a cada atualização
+            progresso["value"] += 20  # Aumenta o valor em 20 a cada atualização
             root.after(1000, atualizar_barra)  # Chama a função novamente após 1000 milissegundos (1 segundo)
             
             if valor_atual > 30 and valor_atual < 50:
@@ -63,7 +63,7 @@ root.title("Adivinhador mágico")
 root.geometry("500x500")
 
 # Cria um label
-texto = tk.Label(root, text="Digite um número: ") 
+texto = tk.Label(root, text="Digite o número que você está pensando: ") 
 
 texto.pack() # O método pack() organiza os widgets de forma que eles ocupem o menor espaço possível
 
